@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TPENIEnchere</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   <servlet>
+  	<servlet-name>Accueil</servlet-name>
+  	<jsp-file>/WEB-INF/affichage/Accueil.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Accueil</servlet-name>
+  <url-pattern>/PageAccueil</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>Connexion</servlet-name>
+  	<jsp-file>/WEB-INF/affichage/Connexion.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Connexion</servlet-name>
+  <url-pattern>/PageConnexion</url-pattern>
+  </servlet-mapping>
+  
+       <servlet>
+  	<servlet-name>Inscription</servlet-name>
+  	<jsp-file>/WEB-INF/affichage/Inscription.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Inscription</servlet-name>
+  <url-pattern>/PageInscription</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>AffichageProfilVendeur</servlet-name>
+    <jsp-file>/WEB-INF/affichage/AffichageProfilVendeur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AffichageProfilVendeur</servlet-name>
+    <url-pattern>/PageProfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ModificationProfil</servlet-name>
+    <jsp-file>/WEB-INF/affichage/ModificationProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModificationProfil</servlet-name>
+    <url-pattern>/ModificationProfil</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>MonProfil</servlet-name>
+    <jsp-file>/WEB-INF/affichage/MonProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MonProfil</servlet-name>
+    <url-pattern>/MonProfil</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>NouvelleVente</servlet-name>
+  	<jsp-file>/WEB-INF/affichage/NouvelleVente.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>NouvelleVente</servlet-name>
+  <url-pattern>/NouvelleVente</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
